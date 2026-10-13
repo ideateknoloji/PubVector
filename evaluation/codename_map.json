@@ -1,0 +1,52 @@
+[
+  {
+    "model": "qwen2.5:1.5b",
+    "think": false,
+    "codename": "M01"
+  },
+  {
+    "model": "ministral-3:3b",
+    "think": false,
+    "codename": "M02"
+  },
+  {
+    "model": "smollm:360m",
+    "think": false,
+    "codename": "M03"
+  },
+  {
+    "model": "deepseek-r1:1.5b",
+    "think": false,
+    "codename": "M04"
+  },
+  {
+    "model": "qwen3:1.7b",
+    "think": false,
+    "codename": "M05"
+  },
+  {
+    "model": "qwen3.5:0.8b",
+    "think": true,
+    "codename": "M06"
+  },
+  {
+    "model": "qwen3.5:0.8b",
+    "think": false,
+    "codename": "M07"
+  },
+  {
+    "model": "qwen3:1.7b",
+    "think": true,
+    "codename": "M08"
+  },
+  {
+    "model": "deepseek-r1:1.5b",
+    "think": true,
+    "codename": "M09"
+  },
+  {
+    "model": "medgemma1.5:4b",
+    "think": false,
+    "codename": "M10"
+  }
+]

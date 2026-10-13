@@ -1,0 +1,30 @@
+family,comparison,n,n_nonzero,mean_a,mean_b,delta,statistic,z,p_raw,p_holm,sig_05,effect_r
+1_rag_vs_norag,rag_bge_small vs no_rag,1200,880,3.504,3.023,0.482,103100.5,-12.04,2.1804697974203e-33,0.0,True,0.406
+1_rag_vs_norag,rag_bge_large vs no_rag,1200,863,3.478,3.023,0.455,102503.0,-11.465,1.9674093096784762e-30,0.0,True,0.39
+1_rag_vs_norag,rag_pubmedbert vs no_rag,1200,878,3.665,3.023,0.642,76159.0,-15.553,1.5098459730542555e-54,0.0,True,0.525
+2_embedding_comparison,rag_pubmedbert vs rag_bge_small,1200,696,3.665,3.504,0.16,92199.5,-5.493,3.9614637756008644e-08,0.0,True,0.208
+2_embedding_comparison,rag_pubmedbert vs rag_bge_large,1200,727,3.665,3.478,0.187,99378.5,-5.827,5.645382160229224e-09,0.0,True,0.216
+2_embedding_comparison,rag_bge_small vs rag_bge_large,1200,575,3.504,3.478,0.027,79267.0,-0.889,0.3741877527633479,0.374188,False,0.037
+3_per_model_rag_lift,qwen2.5:1.5b: rag_bge_small vs no_rag,120,101,3.972,3.228,0.743,921.0,-5.614,1.9766414709277917e-08,0.0,True,0.559
+3_per_model_rag_lift,ministral-3:3b: rag_pubmedbert vs no_rag,120,83,4.003,3.631,0.372,911.5,-3.786,0.00015320076756313687,0.000306,True,0.416
+3_per_model_rag_lift,smollm:360m: rag_pubmedbert vs no_rag,120,89,3.372,2.829,0.543,904.5,-4.498,6.850649345841484e-06,3.4e-05,True,0.477
+3_per_model_rag_lift,deepseek-r1:1.5b (think=off): rag_pubmedbert vs no_rag,120,97,3.812,2.94,0.872,744.0,-5.881,4.0663844590448775e-09,0.0,True,0.597
+3_per_model_rag_lift,qwen3:1.7b (think=off): rag_pubmedbert vs no_rag,120,91,4.098,3.062,1.036,271.0,-7.22,5.211060021061744e-13,0.0,True,0.757
+3_per_model_rag_lift,qwen3.5:0.8b (think=on): rag_pubmedbert vs no_rag,120,42,2.119,1.589,0.53,110.5,-4.268,1.970440483661181e-05,5.9e-05,True,0.659
+3_per_model_rag_lift,qwen3.5:0.8b (think=off): rag_pubmedbert vs no_rag,120,99,4.097,3.003,1.094,384.0,-7.304,2.799533375969442e-13,0.0,True,0.734
+3_per_model_rag_lift,qwen3:1.7b (think=on): rag_pubmedbert vs no_rag,120,93,4.198,3.504,0.694,838.5,-5.168,2.3723436016488698e-07,1e-06,True,0.536
+3_per_model_rag_lift,deepseek-r1:1.5b (think=on): rag_bge_small vs no_rag,120,94,3.593,3.427,0.167,1907.5,-1.227,0.21986962267019627,0.21987,False,0.127
+3_per_model_rag_lift,medgemma1.5:4b: rag_pubmedbert vs no_rag,120,88,3.505,3.016,0.489,911.5,-4.369,1.2464495582117573e-05,5e-05,True,0.466
+4_per_tier_benefit,Factual: rag_pubmedbert vs no_rag,400,293,3.88,2.918,0.962,4911.0,-11.464,1.991093687194918e-30,0.0,True,0.67
+4_per_tier_benefit,Conceptual/Clinical: rag_pubmedbert vs no_rag,400,307,3.565,2.926,0.639,9869.5,-8.855,8.3386086701124845e-19,0.0,True,0.505
+4_per_tier_benefit,Synthesis: rag_pubmedbert vs no_rag,400,278,3.55,3.224,0.325,11605.5,-5.813,6.138264467722347e-09,0.0,True,0.349
+5_per_domain_benefit,fabry: rag_bge_small vs no_rag,300,222,3.744,2.921,0.822,2153.5,-10.685,1.1938183100326189e-26,0.0,True,0.717
+5_per_domain_benefit,ctx: rag_pubmedbert vs no_rag,300,233,3.224,2.027,1.197,1711.5,-11.579,5.29487112428893e-31,0.0,True,0.759
+5_per_domain_benefit,lung_adenocarcinoma: rag_pubmedbert vs no_rag,300,250,4.12,3.579,0.542,9186.5,-5.687,1.2901202771130162e-08,0.0,True,0.36
+5_per_domain_benefit,scrna: rag_bge_large vs no_rag,300,178,3.694,3.564,0.13,5548.0,-3.529,0.00041687960971782597,0.000417,True,0.265
+5b_lung_adenocarcinoma_embeddings,rag_bge_small vs no_rag,300,233,3.433,3.579,-0.146,11565.5,-2.008,0.044693516426790626,0.044694,True,0.132
+5b_lung_adenocarcinoma_embeddings,rag_bge_large vs no_rag,300,236,3.337,3.579,-0.241,10759.5,-3.074,0.00211362832148079,0.004227,True,0.2
+5b_lung_adenocarcinoma_embeddings,rag_pubmedbert vs no_rag,300,250,4.12,3.579,0.542,9186.5,-5.687,1.2901202771130162e-08,0.0,True,0.36
+6_reasoning_mode,qwen3:1.7b: think=on vs think=off,480,262,3.988,3.691,0.298,7753.0,-7.731,1.0634107014591232e-14,0.0,True,0.478
+6_reasoning_mode,deepseek-r1:1.5b: think=on vs think=off,480,358,3.512,3.583,-0.071,30953.0,-0.602,0.5468732216229102,0.546873,False,0.032
+6_reasoning_mode,qwen3.5:0.8b: think=on vs think=off,480,347,1.774,3.645,-1.871,242.5,-16.048,5.879213144980827e-58,0.0,True,0.862

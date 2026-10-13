@@ -1,0 +1,30 @@
+family,comparison,n,n_nonzero,mean_a,mean_b,delta,statistic,z,p_raw,p_holm,sig_05,effect_r
+1_rag_vs_norag,rag_bge_small vs no_rag,1200,962,2.962,2.107,0.855,39545.0,-22.292,4.405226740433104e-110,0.0,True,0.719
+1_rag_vs_norag,rag_bge_large vs no_rag,1200,971,2.975,2.107,0.868,43159.0,-22.066,6.723938484739657e-108,0.0,True,0.708
+1_rag_vs_norag,rag_pubmedbert vs no_rag,1200,938,2.977,2.107,0.87,35740.0,-22.234,1.611714989502573e-109,0.0,True,0.726
+2_embedding_comparison,rag_pubmedbert vs rag_bge_small,1200,809,2.977,2.962,0.015,162725.0,-0.166,0.868426749051837,1.0,False,0.006
+2_embedding_comparison,rag_pubmedbert vs rag_bge_large,1200,846,2.977,2.975,0.002,178146.5,-0.14,0.8883752611117792,1.0,False,0.005
+2_embedding_comparison,rag_bge_small vs rag_bge_large,1200,813,2.962,2.975,-0.013,158639.0,-1.02,0.3074950809479947,0.922485,False,0.036
+3_per_model_rag_lift,qwen2.5:1.5b: rag_pubmedbert vs no_rag,120,102,3.408,2.564,0.844,676.5,-6.518,7.115851425107161e-11,0.0,True,0.645
+3_per_model_rag_lift,ministral-3:3b: rag_bge_small vs no_rag,120,103,4.056,3.125,0.93,298.5,-7.845,4.3357734391424065e-15,0.0,True,0.773
+3_per_model_rag_lift,smollm:360m: rag_bge_small vs no_rag,120,79,1.872,1.58,0.292,634.0,-4.634,3.5925942418360837e-06,8e-06,True,0.521
+3_per_model_rag_lift,deepseek-r1:1.5b (think=off): rag_bge_large vs no_rag,120,114,2.978,1.642,1.336,89.0,-9.02,1.886159052129035e-19,0.0,True,0.845
+3_per_model_rag_lift,qwen3:1.7b (think=off): rag_bge_small vs no_rag,120,111,3.781,2.478,1.303,241.0,-8.443,3.091251962250871e-17,0.0,True,0.801
+3_per_model_rag_lift,qwen3.5:0.8b (think=on): rag_pubmedbert vs no_rag,120,15,1.206,1.067,0.139,25.5,-1.972,0.04862889913049973,0.048629,True,0.509
+3_per_model_rag_lift,qwen3.5:0.8b (think=off): rag_pubmedbert vs no_rag,120,114,3.55,1.903,1.647,53.5,-9.121,7.44894513057762e-20,0.0,True,0.854
+3_per_model_rag_lift,qwen3:1.7b (think=on): rag_bge_large vs no_rag,120,111,3.678,2.7,0.978,537.5,-7.574,3.619502480238704e-14,0.0,True,0.719
+3_per_model_rag_lift,deepseek-r1:1.5b (think=on): rag_bge_large vs no_rag,120,109,2.808,1.664,1.145,63.0,-8.878,6.828732224602073e-19,0.0,True,0.85
+3_per_model_rag_lift,medgemma1.5:4b: rag_bge_small vs no_rag,120,108,2.931,2.35,0.581,1415.5,-4.686,2.7866517402302572e-06,8e-06,True,0.451
+4_per_tier_benefit,Factual: rag_bge_large vs no_rag,400,328,3.229,2.105,1.124,3456.5,-13.691,1.1439574138841995e-42,0.0,True,0.756
+4_per_tier_benefit,Conceptual/Clinical: rag_pubmedbert vs no_rag,400,317,2.977,2.086,0.892,3542.5,-13.268,3.5482325525346904e-40,0.0,True,0.745
+4_per_tier_benefit,Synthesis: rag_bge_large vs no_rag,400,307,2.761,2.131,0.63,5243.5,-11.825,2.894302899409255e-32,0.0,True,0.675
+5_per_domain_benefit,fabry: rag_bge_large vs no_rag,300,252,3.177,2.216,0.961,1976.5,-12.062,1.677615153478628e-33,0.0,True,0.76
+5_per_domain_benefit,ctx: rag_pubmedbert vs no_rag,300,252,3.193,1.524,1.669,44.5,-13.732,6.571633086496417e-43,0.0,True,0.865
+5_per_domain_benefit,lung_adenocarcinoma: rag_pubmedbert vs no_rag,300,213,2.73,2.119,0.611,2330.0,-10.075,7.14500379460992e-24,0.0,True,0.69
+5_per_domain_benefit,scrna: rag_bge_small vs no_rag,300,236,2.899,2.57,0.329,7074.5,-6.597,4.1939002812989565e-11,0.0,True,0.429
+5b_lung_adenocarcinoma_embeddings,rag_bge_small vs no_rag,300,223,2.638,2.119,0.519,3571.5,-9.253,2.1776263549603215e-20,0.0,True,0.62
+5b_lung_adenocarcinoma_embeddings,rag_bge_large vs no_rag,300,227,2.691,2.119,0.572,3668.0,-9.367,7.459113552422475e-21,0.0,True,0.622
+5b_lung_adenocarcinoma_embeddings,rag_pubmedbert vs no_rag,300,213,2.73,2.119,0.611,2330.0,-10.075,7.14500379460992e-24,0.0,True,0.69
+6_reasoning_mode,qwen3:1.7b: think=on vs think=off,480,285,3.395,3.433,-0.038,17419.0,-2.137,0.03259541006520248,0.032595,True,0.127
+6_reasoning_mode,deepseek-r1:1.5b: think=on vs think=off,480,330,2.464,2.594,-0.131,18374.0,-5.165,2.401699856171092e-07,0.0,True,0.284
+6_reasoning_mode,qwen3.5:0.8b: think=on vs think=off,480,464,1.14,3.083,-1.943,480.0,-18.521,1.4051379943464838e-76,0.0,True,0.86
