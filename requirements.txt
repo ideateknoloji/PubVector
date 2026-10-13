@@ -1,0 +1,38 @@
+# PubVector dependencies (single file: pubvector_bioc_rag.py)
+# Install with:  python -m pip install -r requirements.txt
+#
+# External requirement (not pip-installable):
+#   Ollama  https://ollama.com  — needed for the RAG chatbot tab.
+#   Pull the model before running:  ollama pull medgemma:latest
+
+# Web app
+streamlit>=1.32          # st.tabs, st.chat_input, st.chat_message require 1.31+
+
+# Data handling / output formats
+pandas>=2.0
+pyarrow>=14.0            # parquet read/write
+
+# PubMed / PMC access
+biopython>=1.81          # Bio.Entrez
+requests>=2.31           # HTTP calls to NCBI, Ollama
+
+# Full-text / XML parsing
+beautifulsoup4>=4.12
+lxml>=5.0                # BeautifulSoup "lxml-xml" parser
+
+# Progress bars (pipeline logging)
+tqdm>=4.66
+
+# PDF → Markdown conversion (--convert-to-markdown)
+pymupdf4llm>=0.0.17      # wraps PyMuPDF; pulls in PyMuPDF automatically
+
+# RAG: embeddings (any HF sentence-transformers model) + FAISS vector store + chatbot retrieval
+torch>=2.0               # required by sentence-transformers / embedding models
+langchain-core>=0.2      # Document class, base abstractions
+langchain>=0.2
+langchain-text-splitters>=0.2
+langchain-community>=0.2 # FAISS vector store integration
+langchain-huggingface>=0.1
+sentence-transformers>=3.0
+huggingface_hub>=0.23    # scan_cache_dir(), used to detect already-downloaded embedding models
+faiss-cpu>=1.8           # swap for faiss-gpu if a CUDA GPU is available
